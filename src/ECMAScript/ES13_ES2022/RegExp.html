@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Regular Expressions</h1>
+<h2>The d modifier</h2>
+<p>Match all that starts or ends with aa or bb:</p>
+<p id="demo"></p>
+
+<script>
+let text = "aaaabb"; 
+let result = text.match(/(aa)(bb)/d);
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>

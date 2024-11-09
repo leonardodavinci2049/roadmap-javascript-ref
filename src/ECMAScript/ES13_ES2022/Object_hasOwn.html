@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>JavaScript Objects</h1>
+    <h2>The Object.hasOwn() Method</h2>
+    <p>Check if a property is the own property of an object:</p>
+    <p id="demo"></p>
+
+    <script>
+      const proto = {
+        initProp: 500,
+      };
+      const obj = {
+        __proto__: proto,
+      };
+
+      let text = "";
+      text += ("initProp" in obj) + " ";
+      text += ("initProp" in proto) + " ";
+      text += Object.hasOwn("initProp") + " ";
+      document.getElementById("demo").innerHTML = text;
+    </script>
+  </body>
+</html>
